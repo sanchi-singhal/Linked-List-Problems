@@ -1,0 +1,15 @@
+3.Node at a given index in linked list
+
+https://practice.geeksforgeeks.org/problems/node-at-a-given-index-in-linked-list/1?page=1&category[]=Linked%20List&sortBy=difficulty
+
+
+def getNth(head, k):
+    current=head
+    while(k-1):
+        current=current.next
+        k-=1
+    return current.data
+    # Code here
+
+
+T:O(k)
