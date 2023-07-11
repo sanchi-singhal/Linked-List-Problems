@@ -1,0 +1,29 @@
+6. Linked List Insertion
+
+https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/1?page=1&category[]=Linked%20List&sortBy=difficulty
+
+
+class Solution:
+    #Function to insert a node at the beginning of the linked list.
+    def insertAtBegining(self,head,x):
+        n=Node(x)
+        n.next=head
+        head=n
+        return head
+        # code here 
+    
+    #Function to insert a node at the end of the linked list.
+    def insertAtEnd(self,head,x):
+        n=Node(x)
+        if(head==None):
+            head=n
+        else:
+            current=head
+            while(current.next):
+                current=current.next
+            current.next=n
+        return head
+
+        
+T:O(N) for insertATEnd
+T:O(1) for insertAtBegining
