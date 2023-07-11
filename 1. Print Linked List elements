@@ -1,0 +1,14 @@
+1. Print Linked List elements
+
+https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1?page=1&category[]=Linked%20List&sortBy=difficulty
+
+
+class Solution:
+    def display(self,node):
+        current=node
+        while(current):
+            print(current.data,end=" ")
+            current=current.next
+        #code here
+
+T:O(n)
