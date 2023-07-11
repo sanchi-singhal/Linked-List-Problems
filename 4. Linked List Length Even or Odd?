@@ -1,0 +1,17 @@
+4.Linked List Length Even or Odd?
+
+https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1?page=1&category[]=Linked%20List&sortBy=difficulty
+
+def isLengthEvenOrOdd(head):
+    current=head
+    count=0
+    while(current):
+        count+=1
+        current=current.next
+    if(count%2==0):
+        return 0
+    else:
+        return 1
+    # Code here
+
+T:O(N)
