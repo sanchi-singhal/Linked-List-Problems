@@ -1,0 +1,17 @@
+8. Check If Circular Linked List
+
+https://practice.geeksforgeeks.org/problems/circular-linked-list/1?page=1&category[]=Linked%20List&sortBy=difficulty
+
+
+def isCircular(head):
+    current=head
+    while(current!=None or current!=head):
+        if(current.next==head):
+            return True
+        elif(current.next==None):
+            return False
+        else:
+            current=current.next
+
+
+T:O(N)
